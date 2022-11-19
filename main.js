@@ -1,4 +1,4 @@
-const homeController = require('/controller/homeController');
+const homeController = require("./controller/homeController");
 
 const initMain = () => {
     homeController.mainMenu();
