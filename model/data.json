@@ -1,0 +1,110 @@
+[
+  {
+    "name": "The Sleeping Student",
+    "class": "Steelers 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 3.5,
+    "subject2": "Best excuses",
+    "subject2Mark": 10,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 4.2,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 2
+  },
+  {
+    "name": "Johnny 3Fingers",
+    "class": "Cowboys 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 6,
+    "subject2": "Best excuses",
+    "subject2Mark": 4.7,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 4,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 10
+  },
+  {
+    "name": "Miss Danger",
+    "class": "Cowboys 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 10,
+    "subject2": "Best excuses",
+    "subject2Mark": 8,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 4.4,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 6
+  },
+  {
+    "name": "Tyrone Shotgun",
+    "class": "Raiders 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 8,
+    "subject2": "Best excuses",
+    "subject2Mark": 4.5,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 6,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 9
+  },
+  {
+    "name": "Jamal Gangsta Leeroy",
+    "class": "Broncos 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 3,
+    "subject2": "Best excuses",
+    "subject2Mark": 3.4,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 5,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 10
+  },
+  {
+    "name": "Sister Switchblades",
+    "class": "Saints 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 9,
+    "subject2": "Best excuses",
+    "subject2Mark": 6,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 9,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 7.9
+  },
+  {
+    "name": "Donald Duck",
+    "class": "Saints 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 5,
+    "subject2": "Best excuses",
+    "subject2Mark": 10,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 4,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 2.3
+  },
+  {
+    "name": "Harley Quinn",
+    "class": "Raiders 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 7,
+    "subject2": "Best excuses",
+    "subject2Mark": 10,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 6.9,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 10
+  },
+  {
+    "name": "Lord Brain",
+    "class": "Broncos 12th Grade",
+    "subject1": "How to look intelligent",
+    "subject1Mark": 9,
+    "subject2": "Best excuses",
+    "subject2Mark": 5,
+    "subject3": "The Answer to Life, The Universe and Everything",
+    "subject3Mark": 10,
+    "subject4": "Street-Fight Mathematics",
+    "subject4Mark": 2
+  }
+]
