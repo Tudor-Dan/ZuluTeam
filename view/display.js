@@ -1,25 +1,18 @@
-const readline = require("readline");
+const readlineSync = require("readline-sync");
+const RESET = "\x1b[0m";
+const RED = "\x1b[1m\x1b[31m";
+const GREEN = "\x1b[32m";
+const YELLOW = "\x1b[33m";
+const BLUE = "\x1b[34m";
+const PURPLE = "\x1b[35m";
+const CYAN = "\x1b[36m";
 
 /**
  * Gets input from the user.
  * @param title title of input section
- * @param callback callback function that returns user input
  */
-const getInput = (title, callback) => {
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
-    let response;
-    rl.setPrompt(title);
-    rl.prompt();
-    rl.on("line", userInput => {
-        response = userInput;
-        rl.close();
-    });
-    rl.on("close", () => {
-       return callback(response);
-    });
+const getInput = (title) => {
+    return readlineSync.question(`\n${YELLOW}${title}${RESET}`);
 }
 
 /**
@@ -29,9 +22,26 @@ const getInput = (title, callback) => {
  */
 const printMessage = (message, error = false) => {
     if (error) {
-        console.log(`\x1b[33m ${message} \x1b[0m`);
+        console.log(`${RED}${message}${RESET}`);
     } else {
-        console.log(`${message}`);
+        console.log(`${GREEN}${message}${RESET}`);
+    }
+}
+
+/**
+ * Prints data as a table to the console
+ * @param rawData array of objects
+ * @param title title of the table for printing
+ */
+function printData(rawData, title) {
+    console.log(`${CYAN}${title}${RESET}`);
+    for (let i = 0; i < rawData.length; i++) {
+        let line = "";
+        for (const [key, value] of Object.entries(rawData[i])) {
+            line += `${key}:${BLUE}${value}${RESET} `;
+        }
+        console.log(line);
+        console.log('-----------------------------------------');
     }
 }
 
@@ -45,10 +55,10 @@ const printMessage = (message, error = false) => {
  * @param optionsArray array of strings - options that will be shown in menu
  */
 const printMenu = (title, optionsArray) => {
-    console.log(title);
+    console.log(`${PURPLE}${title}${RESET}`);
     for (let i = 0; i < optionsArray.length; i++) {
         console.log(`(${i}) ${optionsArray[i]}`);
     }
 }
 
-module.exports = {printMessage, getInput, printMenu};
+module.exports = {printMessage, getInput, printMenu, printData};
