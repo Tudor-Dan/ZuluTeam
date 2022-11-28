@@ -1,5 +1,11 @@
 ### Agile Workshop Practice
 
+Node:
+- Before running the app, please install the required project dependencies with this command from terminal:
+    - `npm i`
+- Afterwards, you can run the app with:
+    - `node app`
+
 Git flow:
 
 - Before creating a new branch choose which is the source branch
