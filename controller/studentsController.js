@@ -24,17 +24,55 @@ const getNumberOfSchoolClasses = () => {
   );
 };
 
+const addNewStudent = () => {
+  const students = dataManager.readData("data.json");
+  const studentName = display.getInput("Please enter a name: ");
+  const studentClass = display.getInput("Please enter a class: ");
+  students.push({ name: studentName, class: studentClass });
+  dataManager.writeData(students, "data.json");
+  display.printMessage(
+    `Student ${studentName} has been added in database`,
+    false
+  );
+};
+
+const deleteStudent = () => {
+  const students = dataManager.readData("data.json");
+  const toDelete = display.getInput("Please enter a name: ");
+  const newStudents = students.filter((s) => s.name !== toDelete);
+  dataManager.writeData(newStudents, "data.json");
+  display.printMessage(
+    `Database updated, ${toDelete} has been removed from database`,
+    false
+  );
+};
+
+const updateStudent = () => {
+  const students = dataManager.readData("data.json");
+  const studentToRename = display.getInput(
+    "Please enter student name which you want to rename :)) : "
+  );
+  const newName = display.getInput("Please enter NEW name: ");
+  const newStudents = students.map((s) =>
+    s.name === studentToRename ? { ...s, name: newName } : s
+  );
+  dataManager.writeData(newStudents, "data.json");
+  display.printMessage(
+    `Database updated, ${studentToRename} has been rename to ${newName}`,
+    false
+  );
+};
 
 const hasChosen = () => {
   const userOption = display.getInput("Please enter a number: ");
   if (userOption === "1") {
     getAllStudents();
   } else if (userOption === "2") {
-    display.printMessage("'Add student' not implemented yet.", true);
+    addNewStudent();
   } else if (userOption === "3") {
-    display.printMessage("'Update student' not implemented yet.", true);
+    updateStudent();
   } else if (userOption === "4") {
-    display.printMessage("'Delete student' not implemented yet.", true);
+    deleteStudent();
   } else if (userOption === "5") {
     getNumberOfSchoolClasses();
   } else if (userOption === "0") {
